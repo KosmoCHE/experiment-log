@@ -1,0 +1,9 @@
+{
+  "name": "experiment-log",
+  "version": "1.0.0",
+  "description": "科研实验管理插件：初始化实验结构、创建新实验、归档实验、查看实验状态",
+  "author": {
+    "name": "KosmoCHE"
+  },
+  "license": "MIT"
+}
