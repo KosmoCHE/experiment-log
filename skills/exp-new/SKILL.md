@@ -1,5 +1,5 @@
 ---
-name: new
+name: exp-new
 description: 开始一个新的科研实验，创建实验分支并初始化文档
 allowed-tools: Read, Write, Edit, Glob, Bash
 disable-model-invocation: true
@@ -10,9 +10,9 @@ argument-hint: "<实验名称>"
 
 ## 前置检查
 
-1. 确认 `.claude/experiment-log.md` 存在，若不存在提示先运行 `/experiment-log:init`
+1. 确认 `.claude/experiment-log.md` 存在，若不存在提示先运行 `/experiment-log:exp-init`
 2. 读取 `.claude/project.md`，检查是否有进行中的实验（不是初始占位内容）
-   - 若有，提醒用户先运行 `/experiment-log:archive` 归档当前实验
+   - 若有，提醒用户先运行 `/experiment-log:exp-archive` 归档当前实验
    - 用户明确要放弃当前实验才可继续
 
 ## 操作步骤

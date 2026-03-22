@@ -1,5 +1,5 @@
 ---
-name: archive
+name: exp-archive
 description: 归档当前实验，询问是否合并实验分支
 allowed-tools: Read, Write, Edit, Glob, Bash
 disable-model-invocation: true
@@ -53,7 +53,7 @@ disable-model-invocation: true
 ```
 # 当前实验
 
-> 暂无进行中的实验。使用 `/experiment-log:new <实验名称>` 开始新实验。
+> 暂无进行中的实验。使用 `/experiment-log:exp-new <实验名称>` 开始新实验。
 ```
 
 5. 重置 `.claude/plan.md` 为：
@@ -83,4 +83,4 @@ disable-model-invocation: true
 ## 完成
 
 展示归档摘要：实验名称、状态、结论、归档路径。
-提示使用 `/experiment-log:new <名称>` 开始下一个实验。
+提示使用 `/experiment-log:exp-new <名称>` 开始下一个实验。

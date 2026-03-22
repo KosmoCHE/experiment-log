@@ -1,5 +1,5 @@
 ---
-name: init
+name: exp-init
 description: 初始化科研实验项目的 .claude/ 文档结构
 allowed-tools: Read, Write, Edit, Glob, Bash
 disable-model-invocation: true
@@ -32,7 +32,7 @@ disable-model-invocation: true
 
 ## 维护规则
 1. 执行实验步骤时，及时更新 plan.md 中的进度（用 checkbox 标记）
-2. 实验完成后，提醒用户运行 /experiment-log:archive 归档
+2. 实验完成后，提醒用户运行 /experiment-log:exp-archive 归档
 3. 不要修改 experiments/ 下已归档的文件，除非用户明确要求
 4. project.md 的内容变更需向用户确认后再写入；plan.md 由 AI 自主更新
 ```
@@ -42,7 +42,7 @@ disable-model-invocation: true
 ```
 # 当前实验
 
-> 暂无进行中的实验。使用 `/experiment-log:new <实验名称>` 开始新实验。
+> 暂无进行中的实验。使用 `/experiment-log:exp-new <实验名称>` 开始新实验。
 ```
 
 ### `.claude/plan.md`
@@ -75,4 +75,4 @@ disable-model-invocation: true
 
 ## 完成
 
-展示创建的文件列表，提示使用 `/experiment-log:new <名称>` 开始第一个实验。
+展示创建的文件列表，提示使用 `/experiment-log:exp-new <名称>` 开始第一个实验。

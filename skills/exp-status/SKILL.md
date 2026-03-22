@@ -1,5 +1,5 @@
 ---
-name: status
+name: exp-status
 description: 查看当前实验状态和历史实验概览
 allowed-tools: Read, Glob, Bash
 disable-model-invocation: true
@@ -9,7 +9,7 @@ disable-model-invocation: true
 
 ## 前置检查
 
-确认 `.claude/experiment-log.md` 存在，若不存在提示运行 `/experiment-log:init`。
+确认 `.claude/experiment-log.md` 存在，若不存在提示运行 `/experiment-log:exp-init`。
 
 ## 展示内容
 
